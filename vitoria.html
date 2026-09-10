@@ -1,13 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>MEMENTO — Vitória</title><link rel="stylesheet" href="css/style.css"></head>
-<body><main class="screen">
-<h1 class="result-title">MEMENTO</h1>
-<div class="highlight">Vocês Venceram!</div>
-<div class="result-text">Tempo 01:12</div>
-<div class="players">
-<label>Jogador 01:<input type="text" aria-label="Jogador 01"></label>
-<label>Jogador 02:<input type="text" aria-label="Jogador 02"></label>
-</div>
-<a class="action" href="ranking.html">Salvar</a>
-</main></body></html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MEMENTO — Vitória</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="screen victory-screen">
+
+
+        <h1 class="result-title">
+            MEMENTO
+        </h1>
+
+
+        <div class="highlight">
+            VOCÊS VENCERAM!
+        </div>
+
+
+        <div class="result-text">
+
+            Tempo:
+            <span id="tempo-final">
+                00:00
+            </span>
+
+        </div>
+
+
+        <!-- JOGADORES -->
+
+        <div class="players">
+
+
+            <label>
+
+                Jogador 01:
+
+                <input
+                    id="jogador1"
+                    type="text"
+                    maxlength="20"
+                    autocomplete="off"
+                    placeholder="Digite o nome"
+                >
+
+            </label>
+
+
+            <label>
+
+                Jogador 02:
+
+                <input
+                    id="jogador2"
+                    type="text"
+                    maxlength="20"
+                    autocomplete="off"
+                    placeholder="Digite o nome"
+                >
+
+            </label>
+
+
+        </div>
+
+
+        <!-- BOTÃO -->
+
+        <button
+            id="salvar"
+            class="action save-button"
+            type="button"
+        >
+
+            SALVAR
+
+        </button>
+
+
+        <!-- MENSAGEM -->
+
+        <div
+            id="mensagem"
+            class="save-message"
+        ></div>
+
+
+    </main>
+
+
+    <script src="js/vitoria.js"></script>
+
+
+</body>
+
+</html>

@@ -318,8 +318,17 @@ function atualizarErros() {
 
 function vitoria() {
 
-    window.location.href =
-        "vitoria.html";
+    // Calcula quanto tempo foi usado
+    const tempoUtilizado = 90 - tempoRestante;
+
+    // Guarda o tempo para a tela de vitória
+    localStorage.setItem(
+        "tempoUtilizado",
+        tempoUtilizado
+    );
+
+    // Vai para a tela de vitória
+    window.location.href = "vitoria.html";
 }
 
 

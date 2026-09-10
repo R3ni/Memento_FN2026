@@ -162,3 +162,85 @@ body{min-height:100vh}
     .game-info{font-size:18px;margin-top:6vh}
     .top10{grid-template-columns:1fr;gap:8px;font-size:20px}
 }
+/* =================================
+   TELA DE VITÓRIA
+================================= */
+
+.victory-screen .result-text {
+    color: #fff;
+}
+
+
+.victory-screen .result-text span {
+    color: #e6ca55;
+    font-weight: bold;
+}
+
+
+.victory-screen .players label {
+
+    width: min(80vw, 520px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    color: #fff;
+
+}
+
+
+.victory-screen .players input {
+
+    margin-left: 10px;
+
+    width: 250px;
+
+    background: transparent;
+
+    color: #fff;
+
+    border: none;
+
+    border-bottom: 2px solid #fff;
+
+    outline: none;
+
+    font-size: 24px;
+
+    padding: 5px;
+
+}
+
+
+.victory-screen .players input::placeholder {
+    color: #777;
+}
+
+
+.save-button {
+
+    background: transparent;
+
+    border: none;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+}
+
+
+.save-message {
+
+    min-height: 25px;
+
+    margin-top: 15px;
+
+    color: #e6ca55;
+
+    font-size: 18px;
+
+}
