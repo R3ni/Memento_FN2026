@@ -1,0 +1,36 @@
+JOGADOR 2 - MANUAL
+
+FASE 1 — POSIÇÃO
+Caso o número seja:
+1 → pressione a posição 1
+2 → pressione a posição 2
+3 → pressione a posição 3
+4 → pressione a posição 4
+
+FASE 2 — NÚMERO
+Caso o número seja:
+1 → pressione o número 4
+2 → pressione o número 1
+3 → pressione o número 2
+4 → pressione o número 3
+
+FASE 3 — POSIÇÃO / NÚMERO
+Caso o número seja:
+1 → pressione a posição 2
+2 → pressione o número 4
+3 → pressione a posição 4
+4 → pressione o número 1
+
+FASE 4 — MEMÓRIA DE POSIÇÃO
+Caso o número seja:
+1 → pressione a posição usada na Fase 1
+2 → pressione a posição usada na Fase 2
+3 → pressione a posição usada na Fase 3
+4 → pressione a posição usada na Fase 1
+
+FASE 5 — MEMÓRIA DE NÚMERO
+Caso o número seja:
+1 → pressione o número usado na Fase 1
+2 → pressione o número usado na Fase 3
+3 → pressione o número usado na Fase 2
+4 → pressione o número usado na Fase 4
