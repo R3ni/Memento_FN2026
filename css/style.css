@@ -244,3 +244,16 @@ body{min-height:100vh}
     font-size: 18px;
 
 }
+
+/* Cores do Top 3 */
+.top10 .primeiro {
+    color: #e6ca55;
+}
+
+.top10 .segundo {
+    color: #b8b8b8;
+}
+
+.top10 .terceiro {
+    color: #cd7f32;
+}

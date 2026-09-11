@@ -73,27 +73,37 @@ document.getElementById(
 
 
     // ==================================
-    // TEMPORÁRIO
-    // ==================================
+   fetch("php/salvar_pontuacao.php", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body:
+        "jogador1=" + encodeURIComponent(jogador1) +
+        "&jogador2=" + encodeURIComponent(jogador2) +
+        "&tempo=" + encodeURIComponent(tempo)
+})
+.then(response => response.json())
+.then(data => {
 
-    console.log(
-        "Jogador 1:",
-        jogador1
-    );
+    if (data.sucesso) {
 
-    console.log(
-        "Jogador 2:",
-        jogador2
-    );
+        mensagem.textContent =
+            "Pontuação salva com sucesso!";
 
-    console.log(
-        "Tempo:",
-        tempo
-    );
+    } else {
 
+        mensagem.textContent =
+            data.mensagem;
+    }
+
+})
+.catch(error => {
+
+    console.error(error);
 
     mensagem.textContent =
-        "Pontuação pronta para salvar!";
-
+        "Erro ao conectar com o servidor.";
+});
 
 });

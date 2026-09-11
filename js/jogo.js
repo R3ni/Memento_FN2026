@@ -251,13 +251,21 @@ function erro() {
     atualizarErros();
 
     if (erros >= 3) {
-
-        clearInterval(timer);
-
-        derrota("3 erros cometidos!");
-
+        derrota();
         return;
     }
+
+    // Volta para a Fase 1
+    faseAtual = 1;
+
+    // Apaga a memória das fases anteriores
+    historico = [];
+
+    // Sorteia novamente os botões
+    sortearBotoes();
+
+    // Atualiza a tela
+    atualizarTela();
 }
 
 
