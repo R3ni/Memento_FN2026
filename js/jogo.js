@@ -12,6 +12,20 @@ let historico = [];
 let numeroDisplay;
 let botoes;
 
+// ===============================
+// SONS DO JOGO
+// ===============================
+
+const somAcerto = new Audio("assets/sons/acerto.mp3");
+const somErro = new Audio("assets/sons/erro.mp3");
+const somVitoria = new Audio("assets/sons/vitoria.mp3");
+const somDerrota = new Audio("assets/sons/derrota.mp3");
+
+function tocarSom(som) {
+    som.currentTime = 0;
+    som.play().catch(() => {});
+}
+
 
 // ===============================
 // INICIAR JOGO
@@ -128,6 +142,8 @@ function clicarBotao(posicao, numero) {
 
 
     if (correto) {
+
+        tocarSom(somAcerto);
 
         // Guarda a informação da fase
         historico.push({
@@ -246,6 +262,8 @@ function verificarResposta(fase, display, posicao, numero) {
 
 function erro() {
 
+    tocarSom(somErro);
+
     erros++;
 
     atualizarErros();
@@ -326,6 +344,8 @@ function atualizarErros() {
 
 function vitoria() {
 
+    tocarSom(somVitoria);
+
     // Calcula quanto tempo foi usado
     const tempoUtilizado = 90 - tempoRestante;
 
@@ -345,6 +365,8 @@ function vitoria() {
 // ===============================
 
 function derrota(motivo) {
+
+    tocarSom(somDerrota);
 
     localStorage.setItem(
         "motivoDerrota",

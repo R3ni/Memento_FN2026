@@ -88,8 +88,7 @@ document.getElementById(
 
     if (data.sucesso) {
 
-        mensagem.textContent =
-            "Pontuação salva com sucesso!";
+        window.location.href = "ranking.html";
 
     } else {
 
