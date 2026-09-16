@@ -12,4 +12,4 @@ Mini game baseado em lógica, mémoria e cooperação em dupla
 * **Ryan Santos**
 * **Natasha Araujo**
 * **Jonas Almeida**
-* **Flávio**
+* **Flávio Silva**
